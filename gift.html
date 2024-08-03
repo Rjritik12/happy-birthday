@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift</title>
+    <style>
+      /* Add some basic styling to the body */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+
+      /* Style the header */
+      h1 {
+        color: #00698f;
+        text-shadow: 2px 2px 5px #aaa;
+        margin-bottom: 20px;
+      }
+
+      /* Style the audio player */
+      audio {
+        width: 50%;
+        height: 30px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #ccc;
+      }
+
+      /* Style the text that appears when the song plays */
+      #text {
+        font-size: 24px;
+        color: #008000;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Happy Birthday Gift!</h1>
+    
+    <audio id="song" src="mere_halaat.mp3" controls></audio>
+    <p id="text" style="display: none;">Sachme Mere Haalat aise hai😭 kya karu berojgaar hu abhi, Waise Pasand toh nhi aayega tumhe ye CRINGE sab , pr kya karu acc. to you mood swings hote hai na mujhe toh yehi krna acccha laga waise bhi tum bhi toh itni dedication se wish ki thhi toh itna toh bnta hai(soch rahi hogi ki hisaab barabar krne aaya hai), Dosti ki naav thodi dagmaga gayi hai apni . Anyway: Wish you a Happy Birthday</p>
+
+    <script>
+      document.getElementById('song').addEventListener('play', function() {
+        document.getElementById('text').style.display = 'block';
+      });
+    </script>
+  </body>
+</html>
